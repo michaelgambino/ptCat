@@ -1,11 +1,11 @@
 * {
     box-sizing: border-box;
-    margin: 0px;
-    font-family: Helvetica, sans-serif;
-    background-color: #434343;
 }
 
 body {
+    margin: 0px;
+    font-family: Helvetica, sans-serif;
+    background-color: #434343;
     display: grid;
     height: 100vh;
     width: 100vw;
@@ -19,10 +19,10 @@ body {
 #nav {
     background-color: #1e1e1e;
     text-align: center;
-    padding: 40px 40px;
+    padding: 30px 40px;
     font-family: Courier, monospace;
     color: #569cd6;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 30px;
 }
 
