@@ -4,25 +4,30 @@
 
 body {
     margin: 0px;
-    font-family: Helvetica, sans-serif;
-    background-color: #434343;
+    font-family: 'Merriweather', serif;
     display: grid;
     height: 100vh;
     width: 100vw;
-    grid-template-columns: auto;
-    grid-template-rows: 100px;
+    grid-template-columns: auto 980px auto;
+    grid-template-rows: 100px auto;
     grid-template-areas: 
-        "nav"
-        "main";
+        "tbar-l nav tbar-r"
+        "bbar-l main bbar-r";
+}
+
+.nav {
+    background-color: #1e1e1e;
+}
+
+.main {
+    background-color: white;
 }
 
 #nav {
-    background-color: #1e1e1e;
     text-align: center;
     padding: 30px 40px;
     font-family: Courier, monospace;
-    color: #569cd6;
+    color: gray;
     font-weight: bold;
     font-size: 30px;
 }
-

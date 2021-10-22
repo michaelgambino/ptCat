@@ -3,7 +3,7 @@
     margin: 6px;
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: auto auto auto auto auto;
+    grid-template-rows: auto auto auto 40% auto;
     grid-template-areas: 
         "nutrition"
         "maintenance"
@@ -12,32 +12,34 @@
         "emotion";
 }
 
-#nutrition {
+.main-c {
     border: gray solid 1px;
-    grid-area: nutrition;
+    border-radius: 0px;
     margin: 3px;
+    padding: 6px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    color: #1e1e1e;
+}
+
+#nutrition {
+    grid-area: nutrition;
+    
 }
 
 #maintenance {
-    border: gray solid 1px;
     grid-area: maintenance;
-    margin: 3px;
 }
 
 #training {
-    border: gray solid 1px;
     grid-area: training;
-    margin: 3px;
 }
 
 #schedule {
-    border: gray solid 1px;
     grid-area: schedule;
-    margin: 3px;
 }
 
 #emotion {
-    border: gray solid 1px;
     grid-area: emotion;
-    margin: 3px;
 }
