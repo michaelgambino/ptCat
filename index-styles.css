@@ -15,6 +15,10 @@ body {
         "bbar-l main bbar-r";
 }
 
+.dark {
+    background-color: black;
+}
+
 .nav {
     background-color: #1e1e1e;
 }
@@ -43,7 +47,7 @@ body {
 }
 
 #nav-m {
-    width: 200px;
+    width: 400px;
     text-align: center;
     align-items: center;
     font-family: Courier, monospace;

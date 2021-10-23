@@ -10,14 +10,19 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="index-styles.css">
-    <title>ptCat</title>
+    <title>ptcat</title>
 </head>
 <body>
     <div class="nav" id="tbar-l"></div>
     <div class="nav" id="nav-flex">
-        <div id="nav-l"><label class="switch"><input type="checkbox"><span class="slider round"></span></label></div>
-        <div id="nav-m">ptCat</div>
-        <div id="nav-r"><span class="material-icons" style="font-size:36px">portrait</span></div>
+        <div id="nav-l"><label class="switch"><input type="checkbox" onclick="myFunction()"><span class="slider round"></span></label></div>
+        <script>
+            function myFunction() {
+               document.body.main.classList.toggle("dark");
+            }
+            </script>
+        <div id="nav-m">ptcat</div>
+        <div id="nav-r"><span class="material-icons" style="font-size:40px">portrait</span></div>
     </div>
     <div class="nav" id="tbar-r"></div>
     <div class="main" id="bbar-l"></div>
