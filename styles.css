@@ -1,0 +1,159 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0px;
+    padding: 0;
+    font-family: 'Merriweather', serif;
+    display: grid;
+    height: 100vh;
+    width: 100vw;
+    grid-template-columns: auto 980px auto;
+    grid-template-rows: 100px auto;
+    grid-template-areas: 
+        "tbar-l nav tbar-r"
+        "bbar-l main bbar-r";
+}
+.theme-light {
+    --color-primary: #1E1E1E;
+    --color-secondary: #whitesmoke;
+    --color-accent: #fd6f53;
+    --font-color: ##1e1e1e;
+}
+.theme-dark {
+    --color-primary: #1E1E1E;
+    --color-secondary: #434343;
+    --color-accent: #12cdea;
+    --font-color: lightgray;
+}
+.nav {
+    background-color: var(--color-primary);
+    color: gray;
+}
+.main {
+    background-color: var(--color-secondary);
+}
+#nav-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+#nav-l {
+    width: 100px;
+    align-items: center;
+}
+#nav-r {
+    width: 100px;
+    text-align: right;
+    align-items: center;
+}
+#nav-m {
+    width: auto;
+    text-align: center;
+    align-items: center;
+    font-family: Courier, monospace;
+    font-weight: bold;
+    font-size: 30px;
+}
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 24px;
+  }
+/* Hide default HTML checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+/* The slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+}
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 40px;
+    width: 40px;
+    left: 0px;
+    bottom: 4px;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    box-shadow: 0 0px 15px #2020203d;
+    background: whitesmoke url('https://i.ibb.co/FxzBYR9/night.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+input:checked + .slider {
+    background-color: #363d42;
+}
+input:focus + .slider {
+    box-shadow: 0 0 1px #363d42;
+}
+  input:checked + .slider:before {
+    -webkit-transform: translateX(24px);
+    -ms-transform: translateX(24px);
+    transform: translateX(24px);
+    background: white url('https://i.ibb.co/7JfqXxB/sunny.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+.slider.round:before {
+    border-radius: 50%;
+}
+#main-container {
+    height: calc(100% - 8px);
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto 40% auto;
+    grid-template-areas: 
+        "nutrition"
+        "maintenance"
+        "training"
+        "schedule"
+        "emotion";
+}
+.main-c {
+    margin-top: 8px;
+    border: gray solid 1px;
+    border-radius: 0px;
+    padding: 6px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    color: var(--font-color);
+}
+#nutrition {
+    grid-area: nutrition;
+    
+}
+#maintenance {
+    grid-area: maintenance;
+}
+#training {
+    grid-area: training;
+}
+#schedule {
+    grid-area: schedule;
+}
+#emotion {
+    grid-area: emotion;
+}
