@@ -16,7 +16,7 @@ body {
 }
 .theme-light {
     --color-primary: #1E1E1E;
-    --color-secondary: #whitesmoke;
+    --color-secondary: whitesmoke;
     --color-accent: #fd6f53;
     --font-color: ##1e1e1e;
 }
@@ -178,5 +178,5 @@ input:focus + .slider {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    height: 50px
+    height: 60px;
 }

@@ -1,0 +1,9 @@
+#home-container {
+    height: calc(100% - 8px);
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 60% auto ;
+    grid-template-areas: 
+        "video"
+        "categories";
+}

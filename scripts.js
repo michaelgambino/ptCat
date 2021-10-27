@@ -1,3 +1,12 @@
+
+//
+var x = $(location).attr('href')
+
+//
+function loadMain() {
+    $("#main").load('home.html')
+}
+
 // function to set a given theme/color-scheme
 function setTheme(themeName) {
     localStorage.setItem('theme', themeName);
