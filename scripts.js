@@ -2,9 +2,9 @@
 //
 var x = $(location).attr('href')
 
-//
+// function to load page in #main
 function loadMain() {
-    $("#main").load('home.html')
+    $("#main").load('login.html')
 }
 
 // function to set a given theme/color-scheme
